@@ -1,8 +1,9 @@
-import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import "./assets/css/App.css";
+import Expenses from "./components/Expenses";
 function App() {
   const expenses = [
     {
+      
       title: "Car Insurance",
       amount: 294.67,
       date: new Date(2021, 2, 28),
@@ -15,12 +16,12 @@ function App() {
     {
       title: "Makeup",
       amount: 294.67,
-      date: new Date(2021, 3, 28),
+      date: new Date(2021, 4, 28),
     },
   ];
   return (
     <div className="App">
-      <ExpenseItem  expenses={expenses}/>
+      <Expenses  expenses={expenses}/>
     </div>
   );
 }
