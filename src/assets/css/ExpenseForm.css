@@ -1,0 +1,46 @@
+.new-expense-form{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#D391FA;
+    border-radius: 10px;
+}
+.new-expense-controls{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.new-expense-control{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+input{
+    padding: 0.5rem 3.5rem 0.5rem 0.5rem;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin: 3px;
+}
+label{
+    font: 1rem;
+    font-weight: bold;
+    width: 40px;
+}
+button{
+    padding: 1rem;
+    background-color:#1f1137;
+    color: #fff;
+    border:none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+}

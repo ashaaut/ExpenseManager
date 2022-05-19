@@ -1,0 +1,7 @@
+.new-expense{
+    height: 30%;
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    background-color: aqua;
+}
