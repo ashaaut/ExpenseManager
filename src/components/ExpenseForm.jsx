@@ -1,4 +1,3 @@
-import event from "event";
 import { useState } from "react";
 import "./../assets/css/ExpenseForm.css";
 
@@ -27,22 +26,32 @@ const ExpenseForm = () => {
     });
   };
 
-  const submitHandler=(event)=>{
+  const submitHandler = (event) => {
     event.preventDefault();
     console.log(userInput);
-  }
+    setUserInput({
+      enteredTitle: "",
+      enteredAmount: "",
+      enteredDate: "",
+    });
+  };
 
   return (
     <form className="new-expense-form" onSubmit={submitHandler}>
       <div className="new-expense-controls">
         <div className="new-expense-control">
           <label>Title </label>
-          <input type="text" onChange={titleChangeHandler} />
+          <input
+            type="text"
+            value={userInput.enteredTitle}
+            onChange={titleChangeHandler}
+          />
         </div>
         <div className="new-expense-control">
           <label>Amount</label>
           <input
             type="number"
+            value={userInput.enteredAmount}
             min="0.01"
             step="0.01"
             onChange={amountChangeHandler}
@@ -52,6 +61,7 @@ const ExpenseForm = () => {
           <label>Date </label>
           <input
             type="date"
+            value={userInput.enteredDate}
             min="2022-01-01"
             max="2023-12-31"
             onChange={dateChangeHandler}
