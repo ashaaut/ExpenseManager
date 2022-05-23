@@ -1,6 +1,7 @@
 import "./assets/css/App.css";
 import Expenses from "./components/Expenses";
 import ExpenseForm from "./components/ExpenseForm";
+import NewExpense from "./components/NewExpense";
 function App() {
   const expenses = [
     {
@@ -20,9 +21,15 @@ function App() {
       date: new Date(2021, 4, 28),
     },
   ];
+
+  const addExpenseDataHandler=(expense)=>{
+    expenses.push(expense)
+    console.log(expenses);
+  }
+
   return (
     <div className="App">
-      <ExpenseForm/>
+      <NewExpense addExpenseDataHandler={addExpenseDataHandler}/>
       <Expenses  expenses={expenses}/>
     </div>
   );
