@@ -2,8 +2,9 @@ import "./assets/css/App.css";
 import Expenses from "./components/Expenses";
 import ExpenseForm from "./components/ExpenseForm";
 import NewExpense from "./components/NewExpense";
+import { useState } from "react";
 function App() {
-  const expenses = [
+  const dummyExpenses = [
     {
       
       title: "Car Insurance",
@@ -21,13 +22,15 @@ function App() {
       date: new Date(2021, 4, 28),
     },
   ];
+  const [expenses,setExpenses]=useState(dummyExpenses)
+  
 
   const addExpenseDataHandler=(expense)=>{
-    expenses.push(expense)
-    console.log(expenses);
+    setExpenses([...expenses,expense])
   }
-
+  
   return (
+    
     <div className="App">
       <NewExpense addExpenseDataHandler={addExpenseDataHandler}/>
       <Expenses  expenses={expenses}/>

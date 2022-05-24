@@ -8,7 +8,7 @@ const Expenses=(props)=> {
   const filterChangeHandler = (selectedYear)=>{
     setFilteredYear(selectedYear)
   }
-
+  console.log(expenses);
   return (
     <div className="expenses">
       <ExpenseFilter  selectedYear={filteredYear} filterChangeHandler={filterChangeHandler}/>
