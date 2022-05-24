@@ -44,3 +44,9 @@ button{
     font-size: 1rem;
     border-radius: 10px;
 }
+.new-expense-actions{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: space-between;
+}
