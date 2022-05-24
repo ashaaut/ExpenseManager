@@ -1,10 +1,20 @@
 .new-expense{
-    height: 30%;
-    width: 100%;
+    /* height: 30%;
+    width: 40%;
     border:none;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color:#D391FA; */
     /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: 40%;
+    background-color: #D391FA;;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1rem;
 }
