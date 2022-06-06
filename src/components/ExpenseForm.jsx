@@ -7,11 +7,15 @@ const ExpenseForm = (props) => {
     amount: "",
     date: "",
   });
+  const [valid,setvalid]=useState(false)
 
   const titleChangeHandler = (event) => {
-    setUserInput((prevState) => {
-      return { ...prevState, title: event.target.value };
-    });
+    if(event.target.value.trim().length()>0){
+      setUserInput((prevState) => {
+        return { ...prevState, title: event.target.value };
+      });
+    }
+    
   };
 
   const amountChangeHandler = (event) => {

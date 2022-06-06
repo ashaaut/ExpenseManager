@@ -1,0 +1,8 @@
+.expenses-chart{
+    background-color: rgb(222, 173, 222);
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}

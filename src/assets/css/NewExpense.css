@@ -11,10 +11,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30%;
-    width: 40%;
+    height: 100%;
+    width: 50%;
     background-color: #D391FA;;
     margin-top: 20px;
     border-radius: 10px;
     padding: 1rem;
+    justify-content: center;
 }
